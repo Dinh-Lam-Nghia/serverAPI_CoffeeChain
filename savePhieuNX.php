@@ -15,11 +15,12 @@
     $tienThuTuDichVu = $_POST['tienThuTuDichVu'];
     $tienThuKhac = $_POST['tienThuKhac'];
     $tongTien = $_POST['tongTien'];
+    $coSo = $_POST['coSo'];
 
-    $sql = "INSERT INTO `phieunhapxuatkho` (`maPhieuNX`, `loaiPhieuNX`, `nguoiTaoPhieuNX`, `ngayTaoPhieuNX`, `ngayTPNX`, `tuNgay`, `denNgay`, `nguoiGiao`, `nhaCungCap`, `soTienNX`, `tienThuTuDichVu`, `tienThuKhac`, `tongTien`) 
+    $sql = "INSERT INTO `phieunhapxuatkho` (`maPhieuNX`, `loaiPhieuNX`, `nguoiTaoPhieuNX`, `ngayTaoPhieuNX`, `ngayTPNX`, `tuNgay`, `denNgay`, `nguoiGiao`, `nhaCungCap`, `soTienNX`, `tienThuTuDichVu`, `tienThuKhac`, `tongTien`, `coSo`) 
             VALUES ('".$maPhieuNX."', '".$loaiPhieuNX."', '".$nguoiTaoPhieuNX."', '".$ngayTaoPhieuNX."', '".$ngayTPNX."', '".$tuNgay."', 
                     '".$denNgay."', '".$nguoiGiao."', '".$nhaCungCap."', '".$soTienNX."', 
-                    '".$tienThuTuDichVu."', '".$tienThuKhac."', '".$tongTien."');";
+                    '".$tienThuTuDichVu."', '".$tienThuKhac."', '".$tongTien."', '".$coSo."');";
 	$result = $connect->query($sql);
 
 ?> 
