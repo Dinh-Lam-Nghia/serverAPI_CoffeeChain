@@ -9,9 +9,10 @@
     $hsd = $_POST['hsd'];
     $donGia = $_POST['donGia']; 
     $thanhTien = $_POST['thanhTien'];
+    $coSo = $_POST['coSo'];
 
-    $sql = "INSERT INTO `phieunhapkho` (`maPhieuNX`, `maNVL`, `donViTinh`, `sLuong`, `hsd`, `donGia`, `thanhTien`) 
-    VALUES ('".$maPhieuNX."', '".$maNVL."', '".$donViTinh."', ".$sLuong.", '".$hsd."', ".$donGia.", ".$thanhTien.");";
+    $sql = "INSERT INTO `phieunhapkho` (`maPhieuNX`, `maNVL`, `donViTinh`, `sLuong`, `hsd`, `donGia`, `thanhTien`, `coSo`) 
+    VALUES ('".$maPhieuNX."', '".$maNVL."', '".$donViTinh."', ".$sLuong.", '".$hsd."', ".$donGia.", ".$thanhTien.", ".$coSo.");";
 	$result = $connect->query($sql);
 
 ?> 

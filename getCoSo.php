@@ -1,14 +1,15 @@
+
 <?php
 
 include 'connectMySQL.php';
 
-$coSo = $_POST['coSo'];
-$sql = "SELECT * FROM phieunhapxuatkho WHERE coSo = '".$coSo."';";
+$maNV  = $_POST['maNV'];
+$sql = "SELECT * FROM `cosocoffee` WHERE `maNV` LIKE '".$maNV."'";
 $queryResult = $connect->query($sql);
 
 $result=array();
 
-while($fetchData=$queryResult->fetch_assoc()){ 
+while($fetchData=$queryResult->fetch_assoc()){
 	$result[]=$fetchData;
 }
 
