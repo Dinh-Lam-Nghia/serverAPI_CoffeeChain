@@ -1,12 +1,11 @@
-
 <?php
 
 include 'connectMySQL.php';
 
-$maNV  = $_POST['maNV'];
-$sql = "SELECT * FROM `cosocoffee` WHERE `maNV` = '".$maNV."'";
+$coSo = $_POST['coSo'];
+$sql = "SELECT * FROM `nhanvien` WHERE `coSo` = '".$coSo."'";
 $queryResult = $connect->query($sql);
-
+ 
 $result=array();
 
 while($fetchData=$queryResult->fetch_assoc()){
