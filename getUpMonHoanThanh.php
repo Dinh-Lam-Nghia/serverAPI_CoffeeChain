@@ -5,7 +5,8 @@
     $maBan = $_POST['maBan'];
     $maMon = $_POST['maMon'];
     $hoanThanh = $_POST['hoanThanh'];
-    $sql = "UPDATE dsmonchebien SET hoanThanh = ".$hoanThanh." WHERE maBan  = '".$maBan."' AND maMon = '".$maMon."'";
+    $coSo = $_POST['coSo'];
+    $sql = "UPDATE dsmonchebien SET hoanThanh = ".$hoanThanh." WHERE maBan  = '".$maBan."' AND maMon = '".$maMon."' AND coSo = '".$coSo."' ";
 	$result = $connect->query($sql);
 
 ?>
