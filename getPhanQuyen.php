@@ -3,7 +3,8 @@
 include 'connectMySQL.php';
 
 $maNV = $_POST['maNV'];
-$sql = "SELECT * FROM `phanquyen` WHERE `maNV` = '".$maNV."'";
+$coSo = $_POST['coSo'];
+$sql = "SELECT * FROM `phanquyen` WHERE `maNV` = '".$maNV."'  AND `coSo` LIKE '".$coSo."'";
 $queryResult = $connect->query($sql);
 
 $result=array();
